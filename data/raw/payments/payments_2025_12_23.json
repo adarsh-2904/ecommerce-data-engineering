@@ -1,8 +1,10 @@
-{
-  "payment_id": "PAY123",
-  "order_id": "ORD123",
-  "payment_method": "CREDIT_CARD",
-  "payment_status": "SUCCESS",
-  "amount": 51.00,
-  "payment_date": "2024-01-01"
-}
+[
+  {
+    "payment_id": "PAY123",
+    "order_id": "ORD123",
+    "payment_method": "CREDIT_CARD",
+    "payment_status": "SUCCESS",
+    "amount": 51.00,
+    "payment_date": "2024-01-01"
+  }
+]
