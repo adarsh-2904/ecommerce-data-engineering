@@ -41,7 +41,10 @@ def main():
 
         orders_df.write.format("delta").mode("append").partitionBy("order_date").saveAsTable("bronze_orders")
 
-      
+        spark.sql("select * from bronze_orders").show(5)
+        print(f"Current catalog: {spark.catalog.currentCatalog()}")
+        print(f"Current database: {spark.catalog.currentDatabase()}")
+        spark.sql("SHOW TABLES").show()
 
         logger.info("Orders data written successfully to Bronze layer.")
 
